@@ -8,11 +8,33 @@
                 background-size: cover;
                 width: 100%;
                 height: 200px;
+                position: relative;
+            }
+            .logo-container {
+                position: absolute;
+                bottom: 0;
+                left: 20%;
+                transform: translate(-50%, 50%);
+                border-radius: 20%;
+                width: 200px;
+                height: 200px;
+                background-color: #333;
+                border: 4px solid #fff;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            }
+            .logo {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 20%;
             }
         </style>
     </head>
     <body>
-        <div class="banner"></div>
-        <img src="logo.png">
+        <div class="banner">
+            <div class="logo-container">
+                <img class="logo" src="https://raw.githubusercontent.com/xxxrobert138-netizen/Minecraft-Main-Site/refs/heads/main/logo.png">
+            </div>
+        </div>
     </body>
 </html>
