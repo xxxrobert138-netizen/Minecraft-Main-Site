@@ -68,10 +68,31 @@
             .discord-btn:active {
                 transform: translateY(1px);
             }
+            .button-copy {
+                background-color: #4F46E5;
+                color: #FFFFFF;
+                padding: 12px 24px;
+                font-size: 16px;
+                font-weight: 500;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.2);
+            }
+
+            .simple-btn:hover {
+                background-color: #4338CA;
+                transform: translateY(-1px);
+            }
+
+
+            .simple-btn:active {
+                transform: translateY(1px);
+            }
         </style>
         <script>
-            function copyText() {
-                const text = document.getElementById("textToCopy").innerText;
+            function copyText(text) {
                 navigator.clipboard.writeText(text)
                     .then(() => {
                         alert("Текст успешно скопирован!");
@@ -93,6 +114,8 @@
                 Удачной игры!
             </div>
             <div class="buttons-container">
+                <button class="button-copy" onclick="copyText('jfdsjfiosdjfoidjsfo')">Адрес для ПК</button>
+                <button class="button-copy" onclick="copyText('jfdsjfiosdjfoidjsfo')">Адрес для Телефона</button>
                 <a href="https://discord.gg/Gexn8Quuf" class="discord-btn">
                 Discord
                 </a>
