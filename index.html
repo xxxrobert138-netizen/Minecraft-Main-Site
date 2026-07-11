@@ -29,7 +29,21 @@
                 border-radius: 20%;
             }
             .main {
+                margin: 0; 
+                padding: 120px 5% 40px 5%;
+                text-align: left; 
+                display: flex;
+                flex-direction: row; 
+                justify-content: space-between; 
+                align-items: flex-start;
+                max-width: 100%; 
+            }
 
+            .buttons-container {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-end;
             }
             .discord-btn {
                 display: inline-flex;
@@ -63,10 +77,15 @@
             </div>
         </div>
         <div class="main">
-            <a href="https://discord.gg/Gexn8Quuf" class="discord-btn">
+            <div>
+                Удачной игры!
+            </div>
+            <div class="buttons-container">
+                <a href="https://discord.gg/Gexn8Quuf" class="discord-btn">
                 Discord
-            </a>
-            <a href="https://millida.net/rating/servers/arus" target="_blank" rel="noopener" title="ARUS в рейтинге Millida" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;background:#5ec64d;color:#0b0b0c;font:700 14px/1 Arial,sans-serif;text-decoration:none;">★ Мы в рейтинге Millida</a>
+                </a>
+                <a href="https://millida.net/rating/servers/arus" target="_blank" rel="noopener" title="ARUS в рейтинге Millida" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;background:#5ec64d;color:#0b0b0c;font:700 14px/1 Arial,sans-serif;text-decoration:none;">★ Мы в рейтинге Millida</a>
+            </div>
         </div>
     </body>
 </html>
