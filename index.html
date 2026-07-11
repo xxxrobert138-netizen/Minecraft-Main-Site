@@ -69,6 +69,18 @@
                 transform: translateY(1px);
             }
         </style>
+        <script>
+            function copyText() {
+                const text = document.getElementById("textToCopy").innerText;
+                navigator.clipboard.writeText(text)
+                    .then(() => {
+                        alert("Текст успешно скопирован!");
+                    })
+                    .catch(err => {
+                        console.error("Ошибка при копировании: ", err);
+                    });
+            }
+        </script>
     </head>
     <body>
         <div class="banner">
