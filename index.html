@@ -94,7 +94,7 @@
             }
         </style>
         <script>
-            function copyText(text) {
+            function copyText(text, type) {
                 navigator.clipboard.writeText(text)
                     .then(() => {
                         alert("Текст успешно скопирован!");
@@ -102,6 +102,7 @@
                     .catch(err => {
                         console.error("Ошибка при копировании: ", err);
                     });
+                await fetch('https://robertsserver.onrender.com/minercaft/servers/ARUS/buttonIPcopied?type=' + type);
             }
         </script>
     </head>
@@ -116,8 +117,8 @@
                 Удачной игры!
             </div>
             <div class="buttons-container">
-                <button class="button-copy" onclick="copyText('mexico-sonic.gl.joinmc.link')">Адрес для ПК</button>
-                <button class="button-copy" onclick="copyText('lines-forces.gl.at.ply.gg:18705')">Адрес для Телефона</button>
+                <button class="button-copy" onclick="copyText('mexico-sonic.gl.joinmc.link', 'pc')">Адрес для ПК</button>
+                <button class="button-copy" onclick="copyText('lines-forces.gl.at.ply.gg:18705', 'mobile')">Адрес для Телефона</button>
                 <a href="https://discord.gg/M9fZhdrMgW" class="discord-btn">
                 Discord
                 </a>
