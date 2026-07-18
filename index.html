@@ -94,7 +94,7 @@
             }
         </style>
         <script>
-            function copyText(text, type) {
+            async function copyText(text, type) {
                 navigator.clipboard.writeText(text)
                     .then(() => {
                         alert("Текст успешно скопирован!");
